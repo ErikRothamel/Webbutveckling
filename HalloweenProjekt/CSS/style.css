@@ -1,0 +1,113 @@
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "hd hd hd hd hd"
+    "nv nv nv nv nv"
+    "as mn mn mn mn"
+    "ft ft ft ft ft";
+  gap: 10px;
+}
+
+.body{
+  background-color: black;
+}
+
+header {
+  display: flex;
+  grid-area: hd;
+  background-color: orange;
+  padding: 20px;
+  align-items: center;
+  border-radius: 20px;
+}
+
+#mainLogo {
+  border-radius: 20px;
+}
+
+#headerText {
+  padding-left: 20px;
+}
+
+nav {
+  display: flex;
+  grid-area: nv;
+  background-color: orange;
+  height: 30px;
+  text-align: center;
+  padding: 20px;
+  justify-content: space-evenly;
+  border-radius: 20px;
+}
+
+  aside {
+    display: inline-flex;
+    grid-area: as;
+    background-color: rgb(174, 113, 0);
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  #asideImg{
+    display: block;
+    object-fit: scale-down;
+    border-radius: 20px;
+  }
+
+main {
+  display: flex;
+  grid-area: mn;
+  background-color: rgb(255, 185, 54);
+  height: 1000px;
+  border-radius: 20px;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.mainImage{
+  display: flex;
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+  border-radius: 20px;
+  object-fit: scale-down;
+}
+
+#pg3Img{
+  height: 300px;
+  border-radius: 20px;
+}
+
+.mainFixer{
+  color: rgb(255, 185, 54);
+}
+
+.imgNText{
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  grid-area: ft;
+  background-color: orange;
+  height: 50px;
+  border-radius: 20px;
+  align-items: baseline;
+  padding: 20px;
+  justify-content: flex-start;
+  justify-content: space-evenly;
+}
+
